@@ -1,0 +1,29 @@
+{
+  "name": "rozeo/psr-based-http-server",
+  "description": "description",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "rozeo",
+      "email": "st.prog0908@gmail.com"
+    }
+  ],
+  "require": {
+    "psr/container": "1.0.0",
+    "psr/http-message": "^1.0.1",
+    "psr/http-server-handler": "^1.0.1",
+    "psr/http-factory": "^1.0.1"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "HttpServer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sample\\": "sample/"
+    }
+  }
+}
